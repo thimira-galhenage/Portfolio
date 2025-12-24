@@ -49,8 +49,7 @@ const about = () => {
                 <div className='col-span-3  flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                     <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                     <p className='font-medium'>
-                        Hi, I&apos;m Dinuk, a Computer Engineering Undergraduate with 2 years of experience in software engineering, problem solving, machine learning and deep learning. I am always looking for 
-                        new and innovative ways to showcase my skills.
+                        Hi, I&apos;m Thimira, a mechanical engineering undergraduate.
                     </p>
                     <p className='font-medium my-4'>
                     My portfolio reflects a blend of creativity and technical finesse, showcasing projects where I&apos;ve harnessed the power of code to bring innovative ideas to life. 
