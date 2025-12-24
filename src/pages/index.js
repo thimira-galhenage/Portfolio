@@ -40,7 +40,7 @@ export default function Home() {
               xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl "
               />
               <p className="my-4 text-base font-medium md:text-base sm:text-xs">
-                As a skilled computer engineering undergraduate student, I am
+                As a skilled mechanical engineering undergraduate student, I am
                 dedicated to learn and develop my skills in web development
                 software engineering and data science related fields. Explore my latest projects and articles,
                 showcasing my expertise in various new technology.
