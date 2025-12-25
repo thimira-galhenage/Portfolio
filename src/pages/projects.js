@@ -101,6 +101,18 @@ const projects = () => {
                     githublink="https://github.com/Pathiraja-D/Group-Project-3894-3901"
                     img={patient}/>
                 </div>
+                <div className='col-span-12 '>
+                    <FeaturedProjects 
+                    title="Email Spam Detector"
+                    summary="Compariosn between two machine learning models(Logistic Regression & Naive Bayes)
+                    that which model performs well in identifying spam email for a trained datast from kaggle. Python Flask is used to
+                    create the backend and HTML CSS for frontend."
+                    link="https://email-spam-detector-jyr7.onrender.com/"
+                    type="Machine Learning"
+                    githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
+                    img={email}/>
+                </div>
+                
             </div>
         </Layout>
     </main>
