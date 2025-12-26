@@ -45,30 +45,18 @@ const Education = () => {
             md:w-[2px] md:left-[30px] xs:left-[20px]'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details 
-                type="Bachelor Of Science Engineering In Computer Engineering" 
+                type="Bachelor Of Science Engineering In Mechanical and Manufacturing Engineering" 
                 time="2021-2025"
                 place="Faculty of Engineering University of Ruhuna"
-                info="Relevant courses including Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                Intelligence and Software Engineering."/> 
+                info="A specialized degree covering mechanical design, thermodynamics, and production. Key focus areas 
+                include automation, robotics and industrial maintenance strategies to optimize manufacturing efficiency."/> 
 
                 <Details 
-                type="Online Coursework" 
-                time="2024"
-                place="Coursera"
-                info="Completed coursework in Neural Networks and Deep Learning and ASP.NET Foundation."/>  
-
-                <Details 
-                type="Online Coursework" 
-                time="2023"
-                place="SLIIT and UOM"
-                info="Completed coursework in Artificial Intelligence Stage 1&2.
-                Completed coursework in Python"/>
-
-                <Details 
-                type="Diploma in Information Technology" 
-                time="2020"
-                place="ESOFT Metro College Kalutara"
-                info="Completed a diploma in Information Technology including basics of programming, microsoft office services and computer hardware."/>
+                type="C.W.W. Kannangara Central College" 
+                time="2009 - 2019"
+                place="Matugama"
+                info="Completed G.C.E. O/Ls and A/Ls, establishing a strong foundation in Advanced Mathematics and Physics 
+                required for technical engineering studies."/>
             </ul>
         </div>
 

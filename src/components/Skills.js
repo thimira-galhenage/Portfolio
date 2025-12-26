@@ -31,18 +31,26 @@ const Skills = () => {
             dark:text-dark dark:bg-light text-light p-4 shadow-dark
             lg:p-6 md:p-4 xs:text-xs xs:p-2'
             whileHover={{scale:1.05}}>
-                Java Script
+                SolidWorks
             </motion.div>
-            <Skill name="React" x="-25vw" y="2vw"/>
-            <Skill name="Next.js" x="-5vw" y="-10vw"/>
-            <Skill name="Python" x="20vw" y="6vw"/>
-            <Skill name="Node.js" x="0vw" y="12vw"/>
-            <Skill name="Express.js" x="-20vw" y="-15vw"/>
-            <Skill name="MongoDB" x="15vw" y="-12vw"/>
-            <Skill name="SQL Server" x="32vw" y="-5vw"/>
-            <Skill name="ASP.Net" x="0vw" y="-20vw"/>
-            <Skill name="Machine Learning" x="0vw" y="20vw"/>
-            <Skill name="Deep Learning" x="-40vw" y="-2vw"/>
+            <Skill name="MATLAB" x="-25vw" y="2vw"/>
+            <Skill name="Inventor" x="-5vw" y="-10vw"/>
+            <Skill name="AutoCAD" x="17vw" y="5vw"/>
+            <Skill name="Ansys" x="0vw" y="12vw"/>
+            <Skill name="PLC" x="-20vw" y="-8vw"/>
+            <Skill name="ROS" x="12vw" y="-11vw"/>
+            <Skill name="Condition-Based Monitoring" x="32vw" y="-5vw"/>
+            <Skill name="NDT" x="0vw" y="-20vw"/>
+            <Skill name="Lean" x="-5vw" y="20vw"/>
+            <Skill name="Six Sigma" x="-40vw" y="-2vw"/>
+            <Skill name="5S" x="-12vw" y="7vw"/>
+            <Skill name="Kaizen" x="16vw" y="17vw"/>
+            <Skill name="MS Office" x="-35vw" y="-15vw"/>
+            <Skill name="Smartsheet" x="-22vw" y="16vw"/>
+            <Skill name="Critical thinking" x="25vw" y="-15vw"/>
+            <Skill name="Communication" x="-33vw" y="10vw"/>
+            <Skill name="Teamwork" x="32vw" y="10vw"/>
+            <Skill name="Time Management" x="-18vw" y="-17vw"/>
         </div>
     </>
   )

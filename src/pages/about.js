@@ -8,6 +8,7 @@ import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
+import Certifications from '@/components/Certifications'
 import TransitionEffect from '@/components/TransitionEffect'
 
 const AnimatedNumbers = ({value})=>{
@@ -49,15 +50,19 @@ const about = () => {
                 <div className='col-span-3  flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                     <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                     <p className='font-medium'>
-                        Hi, I&apos;m Thimira, a mechanical engineering undergraduate.
+                        Hi, I&apos;m Thimira, a Mechanical Engineer.
                     </p>
                     <p className='font-medium my-4'>
-                    My portfolio reflects a blend of creativity and technical finesse, showcasing projects where I&apos;ve harnessed the power of code to bring innovative ideas to life. 
-                    From crafting robust algorithms to tinkering with hardware intricacies, I thrive on the challenges that the ever-evolving tech landscape presents.
+                    My portfolio represents a balance of practical engineering and inventive thinking, highlighting projects where mechanical 
+                    design meets intelligent automation. From developing automated glove dipping systems to designing real world machinery used 
+                    in manufacturing environments, I enjoy transforming engineering challenges into solutions that work with precision and purpose. 
+                    CAD modeling, robot programming, and hands on fabrication are the tools I use to bring concepts into motion.
                     </p>
                     <p className='font-medium'>
-                    Join me in exploring the exciting world of computer engineering, where every line of code is a step towards progress. 
-                    Let&apos;s build the future together, one project at a time. Welcome to my corner of the digital universe!
+                    Step into the world of mechanical and automation engineering, where well crafted mechanisms and smart control systems shape 
+                    the future of industry. Every project is an opportunity to refine performance, improve efficiency, and enhance the way 
+                    manufacturing works. I invite you to explore how engineering principles, creativity, and real industrial exposure come 
+                    together to build solutions that matter. Welcome to my space, where ideas move from design to deployment.
                     </p>  
                 </div>
                 <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark
@@ -69,21 +74,21 @@ const about = () => {
                      xl:items-center md:order-3'>
                         <div className='flex flex-col items-end justify-center xl:items-center'>
                             <span className='inline-bloc text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                                <AnimatedNumbers value={2}/>+
+                                <AnimatedNumbers value={5}/>+
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base 
                             xs:text-sm'>satisfied clients </h2>
                         </div>
                         <div className='flex flex-col items-end justify-center xl:items-center'>
                             <span className='inline-bloc text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                            <AnimatedNumbers value={6}/>+
+                            <AnimatedNumbers value={14}/>+
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base 
                             xs:text-sm'>Projects Completed</h2>
                         </div>
                         <div className='flex flex-col items-end justify-center xl:items-center'>
                             <span className='inline-bloc text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                            <AnimatedNumbers value={2}/>+
+                            <AnimatedNumbers value={1}/>+
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base 
                             xs:text-sm'>Years of Experience</h2>
@@ -93,6 +98,7 @@ const about = () => {
             <Skills/>
             <Experience/>
             <Education/>
+            <Certifications/>
         </Layout>
     </main>
     </>

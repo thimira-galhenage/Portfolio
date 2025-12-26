@@ -46,12 +46,13 @@ const articles = () => {
         <TransitionEffect/>
         <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden px-10 dark:text-light'>
             <Layout className='pt-16'>
-                <AnimatedText text="Article Showcase" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl '/>
+                <AnimatedText text="Achievements" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl '/>
                 <ul className='grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16' >
                     <FeaturedArticle
-                    title="Campus Recuitment Prediction"
-                    summary="Building a machine learning model to predict campus recruitment using a kaggle dataset. All the preprocessing and data visualization techiques are included here."
-                    time="9 min read"
+                    title="Techno 2025 CAD Eager Competition"
+                    summary="An inter-university engineering competition organized by the Institution of Engineers Sri Lanka (IESL). 
+                    This award recognizes elite proficiency in Computer-Aided Design (CAD), specifically the ability to model complex 
+                    mechanical components with high speed, precision, and technical accuracy under competitive constraints."
                     img={article1}
                     link=""/>
                     

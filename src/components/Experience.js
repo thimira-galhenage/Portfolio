@@ -13,7 +13,8 @@ const Details = ({position,company,companyLink,time,address,work})=>{
         transition={{duration:0.5,type:"spring"}}>
             <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>
                 {position}&nbsp;
-                <a href = {companyLink} target="_blank" className='text-primary dark:text-primaryDark underline ' >@{company}</a>
+                <a href = {companyLink} target="_blank" className='text-primary dark:text-primaryDark' ><br/>
+                {company}</a>
                 <br/>
                 <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm '>
                     {time}|{address}
@@ -21,6 +22,7 @@ const Details = ({position,company,companyLink,time,address,work})=>{
                 <p className='font-medium w-full md:text-sm'>
                     {work}
                 </p>
+                <br/><br/>
 
             </h3>
         </motion.div>
@@ -46,9 +48,41 @@ const Experience = () => {
             md:left-[30px] xs:left-[20px]'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details 
-                position="Computer Operator" company="Sri Lanka Telecom PLC"
-                time="Mar 2020-Sep 2020" address="Telecom Regional Office Kalutara"
-                work="Worked with a team responsible for customer complaints. Familiarized with the systems of the company ." companyLink="www.slt.lk"/> 
+                position="Student Instructor" company="University of Ruhuna"
+                time="Aug 2025 - Nov 2025 " address=" Faculty of Engineering"
+                work="Assisted undergraduate students in understanding engineering drawing fundamentals, 
+                CAD practices, and technical drafting techniques." companyLink="www.eng.ruh.ac.lk"/> 
+                
+            </ul>
+        </div>
+
+        <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
+            <motion.div 
+            style={{scaleY:scrollYProgress}}
+            className='absolute left-9 top-1 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] 
+            md:left-[30px] xs:left-[20px]'/>
+            <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
+                <Details 
+                position="Trainee Mechanical and Manufacturing Engineer" company="Ansell Lanka"
+                time="Nov 2024 - Mar 2025 " address=" Biyagama Export Processing Zone"
+                work="Gained hands-on experience in automation and manufacturing processes, including CAD design, PLC
+                programming, and robot programming." companyLink="www.ansell.com"/> 
+                
+            </ul>
+        </div>
+
+        <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
+            <motion.div 
+            style={{scaleY:scrollYProgress}}
+            className='absolute left-9 top-1 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] 
+            md:left-[30px] xs:left-[20px]'/>
+            <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
+                <Details 
+                position="Trainee Mechanical and Manufacturing Engineer
+                " company="Hayleys Fabric PLC"
+                time="Oct 2023 - Jan 2024 " address=" Biyagama Export Processing Zone"
+                work="Hands-on exposure to industrial maintenance, condition-based monitoring, boiler/utility systems,
+                MTTR/MTBF analysis, and engineering documentation." companyLink="www.hayleysfabric.com"/> 
                 
             </ul>
         </div>
