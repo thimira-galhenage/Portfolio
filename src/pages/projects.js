@@ -7,10 +7,20 @@ import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
-import email from '../../public/images/projects/emailspam.png'
-import patient from '../../public/images/projects/patient.png'
-import travel from '../../public/images/projects/travelcompanion.png'
-import wallet from '../../public/images/projects/wallet.png'
+import pva from '../../public/images/projects/pva.png'
+import swb from '../../public/images/projects/swb.png'
+import former from '../../public/images/projects/former.png'
+import bucket from '../../public/images/projects/bucketelevator.png'
+import dgx from '../../public/images/projects/DGX.jpg'
+import sfms from '../../public/images/projects/sfms.png'
+import tcr from '../../public/images/projects/tcr.png'
+import hopper from '../../public/images/projects/hopper.png'
+import alum from '../../public/images/projects/alum.png'
+import bra from '../../public/images/projects/bra.png'
+import salinity from '../../public/images/projects/salinity.png'
+import copra from '../../public/images/projects/copra.png'
+import animal from '../../public/images/projects/animal.png'
+import filter from '../../public/images/projects/filter.png'
 
 const FramerImage = motion(Image);
 
@@ -69,7 +79,7 @@ const projects = () => {
                     link="https://email-spam-detector-jyr7.onrender.com/"
                     type="Final Year Capstone Project"
                     githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
-                    img={email}/>
+                    img={pva}/>
                 </div>
                 
                 <div className='col-span-12'>
@@ -80,7 +90,7 @@ const projects = () => {
                     link="https://www.linkedin.com/posts/dinukpathiraja_flutter-firebase-mobileapp-activity-7154594945641672704--54N?utm_source=share&utm_medium=member_desktop"
                     type="Final Year Design Project"
                     githublink="https://github.com/Pathiraja-D/Travel_Companion"
-                    img={travel}/>
+                    img={swb}/>
                 </div>
 
                 <div className='col-span-12'>
@@ -92,7 +102,7 @@ const projects = () => {
                     link="https://www.linkedin.com/posts/dinukpathiraja_digitalwallet-aspnet-reactjs-activity-7128728095661948928-ttUD?utm_source=share&utm_medium=member_desktop"
                     type="Hayleys Fabric PLC"
                     githublink="https://github.com/Pathiraja-D/Digital_Wallet"
-                    img={wallet}/>
+                    img={bucket}/>
                 </div>
 
                 <div className='col-span-12'>
@@ -103,19 +113,19 @@ const projects = () => {
                     link="https://www.linkedin.com/posts/dinukpathiraja_wpf-mvvm-sqlite-activity-7089510404720119808-90cJ?utm_source=share&utm_medium=member_desktop"
                     type="Ansell Lanka Pvt Ltd"
                     githublink="https://github.com/Pathiraja-D/Group-Project-3894-3901"
-                    img={patient}/>
+                    img={dgx}/>
                 </div>
 
                 <div className='col-span-12 '>
                     <FeaturedProjects 
-                    title="Smart Dip Production Line Project"
+                    title="Smart Dip Line Project"
                     summary="Imagine robots, SCARA arms, AMRs and vision systems working together on one line. 
                     This exhibition setup demonstrated how future glove production connects advanced automation
                      technologies into one intelligent workflow."
                     link="https://email-spam-detector-jyr7.onrender.com/"
                     type="Ansell Lanka Pvt Ltd"
                     githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
-                    img={email}/>
+                    img={sfms}/>
                 </div>
 
                 <div className='col-span-12 '>
@@ -127,7 +137,7 @@ const projects = () => {
                     link="https://email-spam-detector-jyr7.onrender.com/"
                     type="Ansell Lanka Pvt Ltd"
                     githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
-                    img={email}/>
+                    img={tcr}/>
                 </div>
 
                 <div className='col-span-12 '>
@@ -138,7 +148,7 @@ const projects = () => {
                     link="https://email-spam-detector-jyr7.onrender.com/"
                     type="Hayleys Fabric PLC"
                     githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
-                    img={email}/>
+                    img={filter}/>
                 </div>
 
                 <div className='col-span-12 '>
@@ -149,7 +159,7 @@ const projects = () => {
                     link="https://email-spam-detector-jyr7.onrender.com/"
                     type="Ansell Vietnam"
                     githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
-                    img={email}/>
+                    img={former}/>
                 </div>
 
                 <div className='col-span-12 '>
@@ -160,7 +170,7 @@ const projects = () => {
                     link="https://email-spam-detector-jyr7.onrender.com/"
                     type="Hayleys Fabric PLC"
                     githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
-                    img={email}/>
+                    img={hopper}/>
                 </div>
 
                 <div className='col-span-12 '>
@@ -171,7 +181,7 @@ const projects = () => {
                     link="https://email-spam-detector-jyr7.onrender.com/"
                     type="Undergraduate Project"
                     githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
-                    img={email}/>
+                    img={alum}/>
                 </div>
 
                 <div className='col-span-12 '>
@@ -182,7 +192,7 @@ const projects = () => {
                     link="https://email-spam-detector-jyr7.onrender.com/"
                     type="Undergraduate Project"
                     githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
-                    img={email}/>
+                    img={bra}/>
                 </div>
                 
                 <div className='col-span-12 '>
@@ -193,7 +203,7 @@ const projects = () => {
                     link="https://email-spam-detector-jyr7.onrender.com/"
                     type="Undergraduate Project"
                     githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
-                    img={email}/>
+                    img={salinity}/>
                 </div>
 
                 <div className='col-span-12 '>
@@ -204,7 +214,7 @@ const projects = () => {
                     link="https://email-spam-detector-jyr7.onrender.com/"
                     type="Undergraduate Project"
                     githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
-                    img={email}/>
+                    img={copra}/>
                 </div>
 
                 <div className='col-span-12 '>
@@ -215,7 +225,7 @@ const projects = () => {
                     link="https://email-spam-detector-jyr7.onrender.com/"
                     type="Undergraduate Project"
                     githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
-                    img={email}/>
+                    img={animal}/>
                 </div>
 
             </div>
