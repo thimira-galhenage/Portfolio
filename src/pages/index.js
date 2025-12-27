@@ -74,14 +74,6 @@ export default function Home() {
         
         
       </main>
-
-      <div className="absolute right-8 -bottom-4 inline-block w-32 lg:hidden">
-          <Image
-            src={mode === "dark" ? darkrobot : lightrobot}
-            alt="robot"
-            className="w-full h-auto"
-          />
-          </div>
     </>
   );
 }
