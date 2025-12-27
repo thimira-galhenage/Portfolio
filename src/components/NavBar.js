@@ -69,9 +69,8 @@ const NavBar = () => {
         </nav>
         
         <nav className='flex items-center justify-center flex-wrap'>
-            <motion.a href="https://twitter.com/dinukpathiraja" target={"_blank"} whileHover={{y:-2}} className='w-8 mx-3' whileTap={{scale:0.9}}><TwitterIcon/></motion.a>
-            <motion.a href="https://github.com/Pathiraja-D" target={"_blank"} whileHover={{y:-2}} className='w-8 mx-3'whileTap={{scale:0.9}}><GithubIcon/></motion.a>
-            <motion.a href="https://www.linkedin.com/in/dinukpathiraja" target={"_blank"} whileHover={{y:-2}} className='w-8 ml-3'whileTap={{scale:0.9}}><LinkedInIcon/></motion.a>
+            <motion.a href="https://github.com/thimira-galhenage" target={"_blank"} whileHover={{y:-2}} className='w-8 mx-3'whileTap={{scale:0.9}}><GithubIcon/></motion.a>
+            <motion.a href="https://www.linkedin.com/in/thimira-galhenage" target={"_blank"} whileHover={{y:-2}} className='w-8 ml-3'whileTap={{scale:0.9}}><LinkedInIcon/></motion.a>
             <button
                 onClick={()=>setMode(mode==="light"?"dark":"light")}
                 className={`ml-3 flex items-center justify-center rounded-full p-1 
@@ -102,9 +101,8 @@ const NavBar = () => {
         </nav>
         
         <nav className='flex items-center justify-center flex-wrap mt-2'>
-            <motion.a href="https://twitter.com/dinukpathiraja" target={"_blank"} whileHover={{y:-2}} className='w-8 mx-3 sm:mx-1' whileTap={{scale:0.9}}><TwitterIcon/></motion.a>
-            <motion.a href="https://github.com/Pathiraja-D" target={"_blank"} whileHover={{y:-2}} className='w-8 mx-3 sm:mx-1'whileTap={{scale:0.9}}><GithubIcon/></motion.a>
-            <motion.a href="https://www.linkedin.com/in/dinukpathiraja" target={"_blank"} whileHover={{y:-2}} className='w-8 ml-3 sm:mx-1'whileTap={{scale:0.9}}><LinkedInIcon/></motion.a>
+            <motion.a href="https://github.com/thimira-galhenage" target={"_blank"} whileHover={{y:-2}} className='w-8 mx-3 sm:mx-1'whileTap={{scale:0.9}}><GithubIcon/></motion.a>
+            <motion.a href="https://www.linkedin.com/in/thimira-galhenage" target={"_blank"} whileHover={{y:-2}} className='w-8 ml-3 sm:mx-1'whileTap={{scale:0.9}}><LinkedInIcon/></motion.a>
             <button
                 onClick={()=>setMode(mode==="light"?"dark":"light")}
                 className={`ml-3 flex items-center justify-center rounded-full p-1 
@@ -124,7 +122,6 @@ const NavBar = () => {
         }
 
         <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
-            <Logo/>
         </div>
     </header>
   )

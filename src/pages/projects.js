@@ -44,9 +44,6 @@ const FeaturedProjects = ({type,title,summary,img,link,githublink}) => {
                     {summary}
                 </p>
                 <div className='mt-2 flex items-center'>
-                    <Link className='w-10' href={githublink} target='_blank'>
-                        <GithubIcon/>
-                    </Link>
                     <Link href={link} target='_blank'className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
                     dark:bg-light dark:text-dark sm:px-4 sm:text-base'>
                         <span>View Project</span>
@@ -76,9 +73,8 @@ const projects = () => {
                     summary="What happens when robots take over a traditional glove-dipping line? 
                     This project transformed a labour-intensive PVA process into an automated, ergonomic, 
                     and consistent production flow driven by collaborative robotics and intelligent control."
-                    link="https://email-spam-detector-jyr7.onrender.com/"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Final Year Capstone Project"
-                    githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
                     img={pva}/>
                 </div>
                 
@@ -87,9 +83,8 @@ const projects = () => {
                     title="Smart Weighing Bin Design Project"
                     summary="Ever wondered how bulk-food shopping could be faster and hands-free? 
                     This automated weighing bin redesigns supermarket workflow with precision dispensing and self-service efficiency."
-                    link="https://www.linkedin.com/posts/dinukpathiraja_flutter-firebase-mobileapp-activity-7154594945641672704--54N?utm_source=share&utm_medium=member_desktop"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Final Year Design Project"
-                    githublink="https://github.com/Pathiraja-D/Travel_Companion"
                     img={swb}/>
                 </div>
 
@@ -99,9 +94,8 @@ const projects = () => {
                     summary="Replacing endless conveyors with a compact vertical lifter, this project reimagines 
                     biomass handling to expand storage capacity while ensuring a steadier and more efficient feed 
                     to the boiler, resulting in improved overall plant performance."
-                    link="https://www.linkedin.com/posts/dinukpathiraja_digitalwallet-aspnet-reactjs-activity-7128728095661948928-ttUD?utm_source=share&utm_medium=member_desktop"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Hayleys Fabric PLC"
-                    githublink="https://github.com/Pathiraja-D/Digital_Wallet"
                     img={bucket}/>
                 </div>
 
@@ -110,9 +104,8 @@ const projects = () => {
                     title="Liquid Texturing Tank Design Project"
                     summary="A tank that designs itself. Enter a few parameters and a complete liquid texturing 
                     tank is generated for fabrication. This project links automated design with real industrial use."
-                    link="https://www.linkedin.com/posts/dinukpathiraja_wpf-mvvm-sqlite-activity-7089510404720119808-90cJ?utm_source=share&utm_medium=member_desktop"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Ansell Lanka Pvt Ltd"
-                    githublink="https://github.com/Pathiraja-D/Group-Project-3894-3901"
                     img={dgx}/>
                 </div>
 
@@ -122,9 +115,8 @@ const projects = () => {
                     summary="Imagine robots, SCARA arms, AMRs and vision systems working together on one line. 
                     This exhibition setup demonstrated how future glove production connects advanced automation
                      technologies into one intelligent workflow."
-                    link="https://email-spam-detector-jyr7.onrender.com/"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Ansell Lanka Pvt Ltd"
-                    githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
                     img={sfms}/>
                 </div>
 
@@ -134,9 +126,8 @@ const projects = () => {
                     summary="Where complex fabric printing requirements meet smart control. 
                     This project involved designing key components and developing PLC control 
                     logic that delivers precision and reliability to printing operations."
-                    link="https://email-spam-detector-jyr7.onrender.com/"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Ansell Lanka Pvt Ltd"
-                    githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
                     img={tcr}/>
                 </div>
 
@@ -145,9 +136,8 @@ const projects = () => {
                     title="Furnace Oil Filter Machine Design Project"
                     summary="Low grade furnace oil becomes cleaner and more reusable through this custom
                      filtration system, improving boiler efficiency and reducing waste in industrial fuel usage."
-                    link="https://email-spam-detector-jyr7.onrender.com/"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Hayleys Fabric PLC"
-                    githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
                     img={filter}/>
                 </div>
 
@@ -156,9 +146,8 @@ const projects = () => {
                     title="Glove Former Design Project"
                     summary="A redesigned glove former built for improved shaping accuracy, durability and 
                     production performance. Small geometric refinements achieve significant impact on forming quality."
-                    link="https://email-spam-detector-jyr7.onrender.com/"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Ansell Vietnam"
-                    githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
                     img={former}/>
                 </div>
 
@@ -167,9 +156,8 @@ const projects = () => {
                     title="Automated Hopper Weighing System Project"
                     summary="What if biomass usage could be monitored in real time without manual checks? 
                     This automated weighing system delivers accurate measurement and process transparency for fuel-based operations."
-                    link="https://email-spam-detector-jyr7.onrender.com/"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Hayleys Fabric PLC"
-                    githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
                     img={hopper}/>
                 </div>
 
@@ -178,9 +166,8 @@ const projects = () => {
                     title="Aluminium Profile Inspection Machine Project"
                     summary="AI driven defect detection paired with pneumatic sorting. This system automates quality 
                     control for aluminium profiles by combining machine vision, sensing and actuation."
-                    link="https://email-spam-detector-jyr7.onrender.com/"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Undergraduate Project"
-                    githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
                     img={alum}/>
                 </div>
 
@@ -189,9 +176,8 @@ const projects = () => {
                     title="Automated Bra Cup Moulding Project"
                     summary="From manual moulding to robotic precision. This project integrates SCARA based handling to 
                     speed up bra cup production while reducing repetitive tasks and headcount."
-                    link="https://email-spam-detector-jyr7.onrender.com/"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Undergraduate Project"
-                    githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
                     img={bra}/>
                 </div>
                 
@@ -200,9 +186,8 @@ const projects = () => {
                     title="Salinity Barrier Design Project"
                     summary="How do you stop saltwater intrusion without blocking a river? This project balances hydraulics, 
                     structural considerations and environmental constraints to protect freshwater resources in Galle."
-                    link="https://email-spam-detector-jyr7.onrender.com/"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Undergraduate Project"
-                    githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
                     img={salinity}/>
                 </div>
 
@@ -211,9 +196,8 @@ const projects = () => {
                     title="Mini Copra Slicer Machine Design Project"
                     summary="Cutting copra by hand is slow and inconsistent. This compact slicer introduces mechanical 
                     efficiency to small scale processing with a simple and user friendly design."
-                    link="https://email-spam-detector-jyr7.onrender.com/"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Undergraduate Project"
-                    githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
                     img={copra}/>
                 </div>
 
@@ -222,9 +206,8 @@ const projects = () => {
                     title="Animal Motion Mechanism Mini Project"
                     summary="Can mechanical linkages mimic natural motion? This project models animal movement through 
                     engineered mechanisms to study how kinematics can replicate biological motion."
-                    link="https://email-spam-detector-jyr7.onrender.com/"
+                    link="https://www.linkedin.com/in/thimira-galhenage/"
                     type="Undergraduate Project"
-                    githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
                     img={animal}/>
                 </div>
 
