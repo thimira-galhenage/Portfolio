@@ -1,221 +1,81 @@
-import React from 'react'
-import Head from 'next/head'
-import Layout from '@/components/Layout'
-import AnimatedText from '@/components/AnimatedText'
-import Link from 'next/link'
-import Image from 'next/image'
-import { GithubIcon } from '@/components/Icons'
-import { motion } from 'framer-motion'
-import TransitionEffect from '@/components/TransitionEffect'
-import pva from '../../public/images/projects/pva.png'
-import swb from '../../public/images/projects/swb.png'
-import former from '../../public/images/projects/former.png'
-import bucket from '../../public/images/projects/bucketelevator.png'
-import dgx from '../../public/images/projects/DGX.jpg'
-import sfms from '../../public/images/projects/sfms.png'
-import tcr from '../../public/images/projects/tcr.png'
-import hopper from '../../public/images/projects/hopper.png'
-import alum from '../../public/images/projects/alum.png'
-import bra from '../../public/images/projects/bra.png'
-import salinity from '../../public/images/projects/salinity.png'
-import copra from '../../public/images/projects/copra.png'
-import animal from '../../public/images/projects/animal.png'
-import filter from '../../public/images/projects/filter.png'
+// src/pages/projects.js
+
+import React from 'react';
+import Head from 'next/head';
+import Layout from '@/components/Layout';
+import AnimatedText from '@/components/AnimatedText';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import TransitionEffect from '@/components/TransitionEffect';
+import projectsData from '@/data/projectsData';
+import Image from 'next/image';
 
 const FramerImage = motion(Image);
 
-const FeaturedProjects = ({type,title,summary,img,link,githublink}) => {
-    return (
-        <article className='w-full flex items-center justify-between relative rounded-br-2xl
-         rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light
-         lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
-            <Link href={link} target='_blank'
-            className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'>
-                <FramerImage src={img} alt={title} className='w-full h-auto' priority sizes='(max-width:768px) 100vw,(max-width:1200px) 50vw,50vw' 
-                />
-            </Link>
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem]
-             bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]'/>
-            <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6 '>
-                <span className='text-primary font-medium text-xl dark:text-primaryDark xs:text-base'>{type}</span>
-                <motion.h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm' whileHover={{scale:1.05}}
-                transition={{duration:0.2}}>{title}</motion.h2>
-                <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>
-                    {summary}
-                </p>
-                <div className='mt-2 flex items-center'>
-                    <Link href={link} target='_blank'className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
-                    dark:bg-light dark:text-dark sm:px-4 sm:text-base'>
-                        <span>View Project</span>
-                    </Link>
-                </div>
+const FeaturedProjects = ({ type, title, shortSummary, img, slug }) => {
+  return (
+    <article className='w-full flex items-center justify-between relative rounded-br-2xl
+     rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light
+     lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
+        <Link href={`/projects/${slug}`} className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'>
+            <FramerImage 
+              src={img} 
+              alt={title} 
+              width={800} 
+              height={500} 
+              className='w-full h-auto' 
+              priority 
+              sizes='(max-width:768px) 100vw,(max-width:1200px) 50vw,50vw' 
+            />
+        </Link>
+        <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem]
+         bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]'/>
+        <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6 '>
+            <span className='text-primary font-medium text-xl dark:text-primaryDark xs:text-base'>{type}</span>
+            <motion.h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm' whileHover={{scale:1.05}}
+            transition={{duration:0.2}}>{title}</motion.h2>
+            <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>
+                {shortSummary}
+            </p>
+            <div className='mt-2 flex items-center'>
+                <Link href={`/projects/${slug}`} className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
+                dark:bg-light dark:text-dark sm:px-4 sm:text-base'>
+                    <span>View Project</span>
+                </Link>
             </div>
-        </article>
-    )
-}
+        </div>
+    </article>
+  )
+};
 
-
-const projects = () => {
+const Projects = () => {
   return (
     <>
-    <Head>
+      <Head>
         <title>Projects Page</title>
-        <meta name="description" content="Generated by create next app" />
-    </Head>
-    <TransitionEffect/>
-    <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
+        <meta name="description" content="Portfolio Projects" />
+      </Head>
+      <TransitionEffect/>
+      <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16 px-20 sm:px-0'>
-            <AnimatedText text="Project Showcase" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
-            <div className='grid grid-cols-12 gap-24 px-10 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
-                <div className='col-span-12 '>
-                    <FeaturedProjects 
-                    title="Dip Line Automation Project (Ansell Textile Lanka)"
-                    summary="What happens when robots take over a traditional glove-dipping line? 
-                    This project transformed a labour-intensive PVA process into an automated, ergonomic, 
-                    and consistent production flow driven by collaborative robotics and intelligent control."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Final Year Capstone Project"
-                    img={pva}/>
-                </div>
-                
-                <div className='col-span-12'>
+          <AnimatedText text="Project Showcase" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
+          <div className='grid grid-cols-12 gap-24 px-10 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
+            {projectsData.map((project, index) => (
+              <div className='col-span-12' key={index}>
                 <FeaturedProjects 
-                    title="Smart Weighing Bin Design Project"
-                    summary="Ever wondered how bulk-food shopping could be faster and hands-free? 
-                    This automated weighing bin redesigns supermarket workflow with precision dispensing and self-service efficiency."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Final Year Design Project"
-                    img={swb}/>
-                </div>
-
-                <div className='col-span-12'>
-                <FeaturedProjects 
-                    title="Bucket Elevator Project"
-                    summary="Replacing endless conveyors with a compact vertical lifter, this project reimagines 
-                    biomass handling to expand storage capacity while ensuring a steadier and more efficient feed 
-                    to the boiler, resulting in improved overall plant performance."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Hayleys Fabric PLC"
-                    img={bucket}/>
-                </div>
-
-                <div className='col-span-12'>
-                <FeaturedProjects 
-                    title="Liquid Texturing Tank Design Project"
-                    summary="A tank that designs itself. Enter a few parameters and a complete liquid texturing 
-                    tank is generated for fabrication. This project links automated design with real industrial use."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Ansell Lanka Pvt Ltd"
-                    img={dgx}/>
-                </div>
-
-                <div className='col-span-12 '>
-                    <FeaturedProjects 
-                    title="Smart Dip Line Project"
-                    summary="Imagine robots, SCARA arms, AMRs and vision systems working together on one line. 
-                    This exhibition setup demonstrated how future glove production connects advanced automation
-                     technologies into one intelligent workflow."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Ansell Lanka Pvt Ltd"
-                    img={sfms}/>
-                </div>
-
-                <div className='col-span-12 '>
-                    <FeaturedProjects 
-                    title="Printing Machine Project"
-                    summary="Where complex fabric printing requirements meet smart control. 
-                    This project involved designing key components and developing PLC control 
-                    logic that delivers precision and reliability to printing operations."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Ansell Lanka Pvt Ltd"
-                    img={tcr}/>
-                </div>
-
-                <div className='col-span-12 '>
-                    <FeaturedProjects 
-                    title="Furnace Oil Filter Machine Design Project"
-                    summary="Low grade furnace oil becomes cleaner and more reusable through this custom
-                     filtration system, improving boiler efficiency and reducing waste in industrial fuel usage."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Hayleys Fabric PLC"
-                    img={filter}/>
-                </div>
-
-                <div className='col-span-12 '>
-                    <FeaturedProjects 
-                    title="Glove Former Design Project"
-                    summary="A redesigned glove former built for improved shaping accuracy, durability and 
-                    production performance. Small geometric refinements achieve significant impact on forming quality."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Ansell Vietnam"
-                    img={former}/>
-                </div>
-
-                <div className='col-span-12 '>
-                    <FeaturedProjects 
-                    title="Automated Hopper Weighing System Project"
-                    summary="What if biomass usage could be monitored in real time without manual checks? 
-                    This automated weighing system delivers accurate measurement and process transparency for fuel-based operations."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Hayleys Fabric PLC"
-                    img={hopper}/>
-                </div>
-
-                <div className='col-span-12 '>
-                    <FeaturedProjects 
-                    title="Aluminium Profile Inspection Machine Project"
-                    summary="AI driven defect detection paired with pneumatic sorting. This system automates quality 
-                    control for aluminium profiles by combining machine vision, sensing and actuation."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Undergraduate Project"
-                    img={alum}/>
-                </div>
-
-                <div className='col-span-12 '>
-                    <FeaturedProjects 
-                    title="Automated Bra Cup Moulding Project"
-                    summary="From manual moulding to robotic precision. This project integrates SCARA based handling to 
-                    speed up bra cup production while reducing repetitive tasks and headcount."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Undergraduate Project"
-                    img={bra}/>
-                </div>
-                
-                <div className='col-span-12 '>
-                    <FeaturedProjects 
-                    title="Salinity Barrier Design Project"
-                    summary="How do you stop saltwater intrusion without blocking a river? This project balances hydraulics, 
-                    structural considerations and environmental constraints to protect freshwater resources in Galle."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Undergraduate Project"
-                    img={salinity}/>
-                </div>
-
-                <div className='col-span-12 '>
-                    <FeaturedProjects 
-                    title="Mini Copra Slicer Machine Design Project"
-                    summary="Cutting copra by hand is slow and inconsistent. This compact slicer introduces mechanical 
-                    efficiency to small scale processing with a simple and user friendly design."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Undergraduate Project"
-                    img={copra}/>
-                </div>
-
-                <div className='col-span-12 '>
-                    <FeaturedProjects 
-                    title="Animal Motion Mechanism Mini Project"
-                    summary="Can mechanical linkages mimic natural motion? This project models animal movement through 
-                    engineered mechanisms to study how kinematics can replicate biological motion."
-                    link="https://www.linkedin.com/in/thimira-galhenage/"
-                    type="Undergraduate Project"
-                    img={animal}/>
-                </div>
-
-            </div>
+                  title={project.title}
+                  shortSummary={project.shortSummary}
+                  img={project.images[0]}
+                  slug={project.slug}
+                  type={project.type}
+                />
+              </div>
+            ))}
+          </div>
         </Layout>
-    </main>
+      </main>
     </>
   )
-}
+};
 
-export default projects
+export default Projects;
