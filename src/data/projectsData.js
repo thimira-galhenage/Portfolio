@@ -124,7 +124,7 @@ const projectsData = [
     shortSummary: 'Can mechanical linkages mimic natural motion? This project models animal movement through engineered mechanisms to study how kinematics can replicate biological motion.',
     summary: `Can mechanical linkages mimic natural motion? This project models animal movement through engineered mechanisms to study how kinematics can replicate biological motion.`,
     images: ['/images/projects/animal.png'],
-    //videos: ['/videos/animal1.mp4', '/videos/animal2.mp4', '/videos/animal3.mp4'],
+    videos: ['/images/projects/animal/animal.mp4'],
     type: 'Undergraduate Project'
   }
 ];
