@@ -22,7 +22,7 @@ const ProjectDetails = () => {
         <title>{project.title}</title>
       </Head>
 
-      <div className='max-w-5xl mx-auto p-4'>
+      <div className='max-w-5xl mx-auto p-4 dark:text-light'>
         {/* Project Title */}
         <h1 className='text-4xl font-bold mb-4'>{project.title}</h1>
 
