@@ -41,10 +41,10 @@ const about = () => {
                 <p>
                   <strong>Email:</strong>{" "}
                   <a 
-                    href="mailto:thimiragalhenage@gmail.com"
+                    href="mailto:mirangagalhenage@gmail.com"
                     className="underline"
                   >
-                    thimiragalhenage@gmail.com
+                    mirangagalhenage@gmail.com
                   </a>
                 </p>
 

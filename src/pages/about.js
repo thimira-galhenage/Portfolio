@@ -50,7 +50,7 @@ const about = () => {
                 <div className='col-span-3  flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                     <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                     <p className='font-medium'>
-                        Hi, I&apos;m Thimira, a Mechanical Engineer.
+                        Hi, I&apos;m Miranga, a Mechanical Engineer.
                     </p>
                     <p className='font-medium my-4'>
                     My portfolio represents a balance of practical engineering and inventive thinking, highlighting projects where mechanical 
